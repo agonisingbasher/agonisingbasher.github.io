@@ -39,9 +39,17 @@ h1 {
     font-family: "Fascinate Inline", system-ui;
     font-size: 50px;
 }
-
+h2 {
+    font-family: "Kavoon", serif;
+    font-size: 28px;
+}
 h3 {
     font-family: "Kavoon", serif;
+    font-size: 28px;
+}
+h4 {
+    font-family: "Kavoon", serif;
+    font-size: 28px;
 }
 
 p {
@@ -73,9 +81,11 @@ img {
 
 /* ----------------------------------------------------------------- */
 /* sessão 2 */
+
 .categoria-videos {
     display: flex;
     overflow-x: auto;
+    padding: 40px;
     gap: 10px;
 }
 
@@ -96,23 +106,7 @@ img {
 
 .categoria h2 {
     color: white;
-    
-}
-
-/* Container principal */
-.videos-e-descricao {
-    display: flex;
-    flex-direction: column; /* Coloca itens em coluna */
-    align-items: center; /* Centraliza os itens horizontalmente */
-    background-color: #9c6c03; /* Fundo fixo da seção */
-    padding: 20px; /* Espaçamento interno */
-    border-bottom: 200px solid #9c6c03;
-}
-
-/* Seções de vídeos */
-.videos {
-    margin-bottom: 20px; /* Espaçamento abaixo dos vídeos */
-    width: 100%; /* Largura completa do container */
+    padding: 50px;
 }
 
 /* Aplica a animação à descrição */
@@ -127,49 +121,49 @@ img {
 }
 
 /* ----------------------------------------------------------------- */
-/* sessão 3 */
+/* Sessão 3 */
 .categoria-3 {
     display: flex;
-    flex-direction: column; /* Coloca itens em coluna */
-    align-items: center; /* Centraliza os itens horizontalmente */
-    background-color: #da41c5c5; /* Fundo fixo da seção */
-    padding: 20px; /* Espaçamento interno */
-    border-bottom: 200px solid #da41c5c5;
+    flex-direction: column; /* Coloca itens em coluna para centralizar o título e os vídeos */
+    align-items: center; /* Centraliza horizontalmente os itens */
+    overflow-x: auto; /* Adiciona rolagem horizontal para os vídeos */
+    gap: 10px;
+    background-color: #da41c5c5;
+    padding: 20px;
+    box-sizing: border-box;
+    white-space: nowrap; /* Impede a quebra de linha para vídeos */
 }
 
 .categoria-3 h3 {
     color: white;
+    text-align: center; /* Centraliza o texto */
+    padding: 50px;
+    width: 100%; /* Garante que o título ocupe a largura total */
+    margin: 0 0 20px 0; /* Adiciona espaço abaixo do título */
 }
-
 .categoria-slime img {
     opacity: 0.5;
+    transition: opacity 0.3s, border 0.3s;
 }
 
 .categoria-slime img:hover {
-    opacity: 1.0;
+    opacity: 1;
     border: 1px solid green;
 }
 
 /* Descrição do slime */
 .descricao-slime {
-    background-color: #da41c5c5; /* Cor de fundo com transparência */
-    color: antiquewhite; /* Cor do texto */
-    display: flex; /* Usa flexbox para centralizar o conteúdo */
-    flex-direction: column; /* Organiza o conteúdo em coluna */
-    align-items: center; /* Centraliza horizontalmente */
-    justify-content: center; /* Centraliza verticalmente */
-    text-align: center; /* Alinha o texto ao centro dentro do contêiner */
-    padding: 20px; /* Adiciona espaçamento interno */
-    box-sizing: border-box; /* Inclui padding e border na largura e altura totais */
-    height: 500px; /* Ajuste conforme necessário */
+    animation: entrar-da-esquerda 1s ease-out;
+    width: 100%; /* Garante que ocupe a largura total */
+    background-color: #da41c5c5;
+    color: antiquewhite;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-/* Se necessário, ajuste a altura do contêiner pai */
-.Texto-3 {
-    position: relative; /* Permite que elementos posicionados absolutamente se alinhem ao pai */
-    height: 500px; /* Ajuste a altura conforme necessário */
-}
 /* ----------------------------------------------------------------- */
+/*--sessão 4--*/
 .categoria-fnaf {
     padding-left: 20px;
     padding-right: 20px;
@@ -177,10 +171,11 @@ img {
     text-align: center; /* Centraliza o texto dentro da seção */
 }
 
-.categoria h4 {
+.categoria-fnaf h4 {
     color: white;
-    margin: 0; /* Remove a margem padrão */
-    padding: 10px 0; /* Adiciona espaçamento ao redor do título */
+    width: 100%; /* Garante que o título ocupe a largura total */
+    padding: 50px;
+    margin: 0 0 20px; /* Adiciona espaço abaixo do título */
 }
 
 .descricao-fnaf {
