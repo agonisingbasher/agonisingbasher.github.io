@@ -3,6 +3,13 @@ body {
     background: #666666;
     margin: 0;
     border-bottom: 100px solid #333;
+    margin: 0;
+    overflow-x: hidden; /* Impede a barra de rolagem horizontal */
+}
+/* Certifique-se de que todos os elementos de contêiner tenham largura máxima de 100% */
+.categoria-videos, .categoria-3, .videos-e-descricao, .descricao-slime, .descricao-stardew {
+    max-width: 100%;
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura total */
 }
 /* Cabeçalho */
 header {
