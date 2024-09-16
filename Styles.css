@@ -1,0 +1,230 @@
+body {
+    color: #333333;
+    background: #666666;
+    margin: 0;
+    border-bottom: 100px solid #333;
+}
+/* Cabeçalho */
+header {
+    border-bottom: solid 1px #167ac6;
+    padding: 30px;
+    color: #167ac6;
+    background-color: #666666;
+    display: flex;
+    align-items: center; /* Alinha verticalmente o texto e a imagem */
+    justify-content: space-between; /* Distribui o espaço entre o texto e a imagem */
+}
+
+header h1 {
+    font-family: "Kavoon", serif;
+    margin: 0; /* Remove a margem do h1 */
+    font-size: 80px; /* Ajuste o tamanho conforme necessário */
+}
+
+.channel-logo {
+    height: 80px; /* Ajusta o tamanho da imagem conforme necessário */
+}
+/* ----------------------------------------------------------------- */
+header {
+    border-bottom: solid 1px #167ac6;
+    padding: 30px;
+    color: #167ac6;
+    background-color: #666666;
+    font-family: "Kavoon", serif;
+    font-size: 80px;
+}
+
+/* Fontes */
+h1 {
+    font-family: "Fascinate Inline", system-ui;
+    font-size: 50px;
+}
+
+h3 {
+    font-family: "Kavoon", serif;
+}
+
+p {
+    font-family: "Playwrite CU", system-ui;
+    font-size: 28px;
+}
+
+.descri {
+    font-family: "Kavoon", serif;
+    font-size: 25px;
+}
+
+img {
+    height: 200px;
+}
+
+/* ----------------------------------------------------------------- */
+/* sessão 1 */
+.intro {
+    background-color: #f0f0f0;
+    padding: 80px 0; /* Ajusta o padding para criar espaço em cima e embaixo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    box-sizing: border-box;
+    border-bottom: 200px solid white;
+}
+
+/* ----------------------------------------------------------------- */
+/* sessão 2 */
+.categoria-videos {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+}
+
+.categoria {
+    padding: 20px;
+    background-color: #9c6c03;
+    text-align: center;
+}
+
+.categoria-videos img {
+    opacity: 0.5;
+}
+
+.categoria-videos img:hover {
+    opacity: 1.0;
+    border: 1px solid green;
+}
+
+.categoria h2 {
+    color: white;
+    
+}
+
+/* Container principal */
+.videos-e-descricao {
+    display: flex;
+    flex-direction: column; /* Coloca itens em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    background-color: #9c6c03; /* Fundo fixo da seção */
+    padding: 20px; /* Espaçamento interno */
+    border-bottom: 200px solid #9c6c03;
+}
+
+/* Seções de vídeos */
+.videos {
+    margin-bottom: 20px; /* Espaçamento abaixo dos vídeos */
+    width: 100%; /* Largura completa do container */
+}
+
+/* Aplica a animação à descrição */
+.descricao-stardew {
+    animation: entrar-da-esquerda 1s ease-out; /* Animação de entrada */
+    width: 100%; /* Largura completa do container */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #9c6c03; /* Cor de fundo desejada */
+    color: antiquewhite;
+    box-sizing: border-box;
+}
+
+/* ----------------------------------------------------------------- */
+/* sessão 3 */
+.categoria-3 {
+    display: flex;
+    flex-direction: column; /* Coloca itens em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    background-color: #da41c5c5; /* Fundo fixo da seção */
+    padding: 20px; /* Espaçamento interno */
+    border-bottom: 200px solid #da41c5c5;
+}
+
+.categoria-3 h3 {
+    color: white;
+}
+
+.categoria-slime img {
+    opacity: 0.5;
+}
+
+.categoria-slime img:hover {
+    opacity: 1.0;
+    border: 1px solid green;
+}
+
+/* Descrição do slime */
+.descricao-slime {
+    background-color: #da41c5c5; /* Cor de fundo com transparência */
+    color: antiquewhite; /* Cor do texto */
+    display: flex; /* Usa flexbox para centralizar o conteúdo */
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    text-align: center; /* Alinha o texto ao centro dentro do contêiner */
+    padding: 20px; /* Adiciona espaçamento interno */
+    box-sizing: border-box; /* Inclui padding e border na largura e altura totais */
+    height: 500px; /* Ajuste conforme necessário */
+}
+
+/* Se necessário, ajuste a altura do contêiner pai */
+.Texto-3 {
+    position: relative; /* Permite que elementos posicionados absolutamente se alinhem ao pai */
+    height: 500px; /* Ajuste a altura conforme necessário */
+}
+/* ----------------------------------------------------------------- */
+.categoria-fnaf {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #000000;
+    text-align: center; /* Centraliza o texto dentro da seção */
+}
+
+.categoria h4 {
+    color: white;
+    margin: 0; /* Remove a margem padrão */
+    padding: 10px 0; /* Adiciona espaçamento ao redor do título */
+}
+
+.descricao-fnaf {
+    background-color: #000000c5; /* Cor de fundo com transparência */
+    color: antiquewhite; /* Cor do texto */
+    display: flex; /* Usa flexbox para centralizar o conteúdo */
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    text-align: center; /* Alinha o texto ao centro dentro do contêiner */
+    padding: 20px; /* Adiciona espaçamento interno */
+    box-sizing: border-box; /* Inclui padding e border na largura e altura totais */
+    height: 500px; /* Ajuste conforme necessário */
+}
+
+/* ----------------------------------------------------------------- */
+.margem-final {
+    background-color: #333; /* Cor de fundo */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Alinha o texto ao centro */
+    color: #fff; /* Cor do texto */
+    border-top: 2px solid #fff; /* Linha separadora no topo */
+}
+
+.social-links {
+    display: flex; /* Usa flexbox para alinhar os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 15px; /* Espaçamento entre os ícones */
+}
+
+.social-icon {
+    color: #fff; /* Cor dos ícones e texto */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-size: 24px; /* Tamanho dos ícones */
+    display: flex; /* Usa flexbox para alinhar o ícone e o texto */
+    align-items: center; /* Alinha verticalmente o ícone e o texto */
+    gap: 5px; /* Espaçamento entre o ícone e o texto */
+}
+
+.social-icon:hover {
+    color: #f0f0f0; /* Cor dos ícones ao passar o mouse */
+}
+
+.social-icon i {
+    font-size: 24px; /* Ajusta o tamanho do ícone */
+}
+
